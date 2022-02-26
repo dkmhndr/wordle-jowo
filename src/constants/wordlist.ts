@@ -55,7 +55,6 @@ export const WORDS = [
   'ambek',
   'delok',
   'pirsa',
-  'rungu',
   'weruh',
   'ajrih',
   'tilem',
