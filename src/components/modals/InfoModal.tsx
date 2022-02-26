@@ -59,7 +59,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        Digawe basa jawa karo{' '}
+        Digawe basa jawa dening{' '}
         <a href="https://instagram.com/dkmhndr" className="underline font-bold">
           Dika Mahendra,
         </a>{' '}
