@@ -8,31 +8,32 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Carane dolanan" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Koe ndue 6 kesempatan nggo mbethek sak ukara. Saben koe njajal mbethek
+        werno nggon kotak bakal ngandani koe sepiro cedake bethekanmu karo ukara
+        saktenane.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="S"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="I" />
+        <Cell value="K" />
+        <Cell value="I" />
+        <Cell value="L" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        Ukarane ana aksara S lan panggone wes bener.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="E" />
         <Cell
           isRevealing={true}
           isCompleted={true}
@@ -40,31 +41,40 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           status="present"
         />
         <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="G" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        Ukarane ana aksara L ning panggone isih kleru.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
+        <Cell value="M" />
         <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="M" />
+        <Cell isRevealing={true} isCompleted={true} value="B" status="absent" />
+        <Cell value="U" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        Aksara B ora ono ing ukara asline.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        Digawe basa jawa karo{' '}
+        <a href="https://instagram.com/dkmhndr" className="underline font-bold">
+          Dika Mahendra,
+        </a>{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://instagram.com/kingkinfajarr"
           className="underline font-bold"
         >
-          check out the code here
+          Kingkin Fajar,
+        </a>{' '}
+        lan{' '}
+        <a
+          href="https://instagram.com/adam_ibnu025"
+          className="underline font-bold"
+        >
+          Adam Ibnu,
         </a>{' '}
       </p>
     </BaseModal>
